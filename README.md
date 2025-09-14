@@ -47,10 +47,10 @@ Due to GitHub file size limitations, the actual dataset and trained model are no
 
 ### Instructions:
 
-1. Download the raw dataset from Google Drive: [Download Raw Dataset](YOUR_RAW_DATASET_LINK)
+1. Download the raw dataset from Google Drive: [Download Raw Dataset](https://drive.google.com/file/d/1daE_-CdjYlZLFRRXIVeLjOnb5h7AUvg6/view?usp=drive_link)
 2. Place the file in the `datasets/` folder with the name `Fraud.csv`.
-3. After preprocessing, download the cleaned dataset (optional): [Download Cleaned Dataset](YOUR_CLEANED_DATASET_LINK) and place it in `cleaned_data/` as `Fraud_cleaned.csv`.
-4. Download the trained XGBoost model (optional): [Download Trained Model](YOUR_MODEL_LINK) and place it in `models/` as `fraud_model.pkl`.
+3. After preprocessing, download the cleaned dataset (optional): [Download Cleaned Dataset](https://drive.google.com/file/d/1N6Xl77ZHSm0eHDbgzkj3Re-PMoSDQXRm/view?usp=drive_link) and place it in `cleaned_data/` as `Fraud_cleaned.csv`.
+4. Download the trained XGBoost model (optional): [Download Trained Model](https://drive.google.com/file/d/1in00l1XEVYR0GmRfa1evPdfX3oqs4tdx/view?usp=drive_link) and place it in `models/` as `fraud_model.pkl`.
 
 ---
 
