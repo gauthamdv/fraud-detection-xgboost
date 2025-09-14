@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Fraud Detection</h1>
+    <form method="POST" action="/">
+        <input type="number" step="0.01" name="amount" placeholder="Transaction Amount" required>
+        <input type="number" step="0.01" name="oldbalanceOrg" placeholder="Old Balance (Origin)" required>
+        <input type="number" step="0.01" name="newbalanceOrig" placeholder="New Balance (Origin)" required>
+        <input type="number" step="0.01" name="oldbalanceDest" placeholder="Old Balance (Destination)" required>
+        <input type="number" step="0.01" name="newbalanceDest" placeholder="New Balance (Destination)" required>
+        <select name="type" required>
+            <option value="TRANSFER">TRANSFER</option>
+            <option value="CASH_OUT">CASH_OUT</option>
+            <option value="PAYMENT">PAYMENT</option>
+            <option value="DEBIT">DEBIT</option>
+        </select>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result_text %}
+    <div id="result">
+        <p id="result-title">Results</p>
+        <p id="result-details">
+            {{ result_text|replace("Results\n","") }}
+        </p>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
